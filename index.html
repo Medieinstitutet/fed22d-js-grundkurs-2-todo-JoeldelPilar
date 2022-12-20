@@ -21,8 +21,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <meta name="theme-color" content="#fafafa">
-  <script async type="module" crossorigin src="/fed22d-js-grundkurs-2-todo-JoeldelPilar/assets/index.71d48245.js"></script>
-  <link rel="stylesheet" href="/fed22d-js-grundkurs-2-todo-JoeldelPilar/assets/index.5b433600.css">
+  <script async type="module" crossorigin src="/fed22d-js-grundkurs-2-todo-JoeldelPilar/assets/index.777d5ce2.js"></script>
+  <link rel="stylesheet" href="/fed22d-js-grundkurs-2-todo-JoeldelPilar/assets/index.0c0f6971.css">
 </head>
 
 <body>
@@ -59,6 +59,19 @@
 
           <hr>
           <div id="create-new-task" class="py-5 text-black">
+
+            <div class="flex gap-2 justify-end mb-4 text-white text-center">
+              <div class="justify-center category-btns">
+                <h3 class="font-semibold text-xl mb-2">Choose a category</h3>
+                <button id="school"
+                  class="category-select material-symbols-outlined border-2 p-2 hover:bg-buttoncolor">school</button>
+                <button id="engineering"
+                  class="category-select material-symbols-outlined border-2 p-2 hover:bg-buttoncolor">engineering</button>
+                <button id="info"
+                  class="category-select material-symbols-outlined border-2 p-2 hover:bg-buttoncolor">info</button>
+              </div>
+            </div>
+
             <form action="" id="task-form" class="flex sm:flex-row flex-wrap justify-between gap-2">
               <label for="new-task-input" class="visually-hidden">new task input</label>
               <input id="new-task-input"
@@ -74,19 +87,8 @@
           <div class="flex flex-grow justify-between gap-2">
             <span id="date-stamp" class="text-l font-semibold"></span>
             <span id="current-week"></span>
-
-            <div class="justify-end">
-              <h3 class="font-semibold">Choose a category</h3>
-              <button id="school"
-                class="category-select material-symbols-outlined border-2 p-2 hover:bg-buttoncolor">school</button>
-              <button id="engineering"
-                class="category-select material-symbols-outlined border-2 p-2 hover:bg-buttoncolor">engineering</button>
-              <button id="info"
-                class="category-select material-symbols-outlined border-2 p-2 hover:bg-buttoncolor">info</button>
-            </div>
           </div>
 
-        </div>
       </section>
     </div>
   </main>
