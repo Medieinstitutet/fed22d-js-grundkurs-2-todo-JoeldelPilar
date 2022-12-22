@@ -9,9 +9,10 @@
   <link rel="icon" type="image/ico" href="/fed22d-js-grundkurs-2-todo-JoeldelPilar/favicon.ico">
 
   <meta property="og:title" content="ToDo web app: Just check it off">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+  <meta property="og:type" content="web app">
+  <meta property="og:url" content="https://medieinstitutet.github.io/fed22d-js-grundkurs-2-todo-JoeldelPilar/">
+  <meta property="og:image"
+    content="https://medieinstitutet.github.io/fed22d-js-grundkurs-2-todo-JoeldelPilar/public/images/og_img.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -21,8 +22,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <meta name="theme-color" content="#fafafa">
-  <script async type="module" crossorigin src="/fed22d-js-grundkurs-2-todo-JoeldelPilar/assets/index.dbd0d331.js"></script>
-  <link rel="stylesheet" href="/fed22d-js-grundkurs-2-todo-JoeldelPilar/assets/index.0c0f6971.css">
+  <script async type="module" crossorigin src="/fed22d-js-grundkurs-2-todo-JoeldelPilar/assets/index.f7a0e753.js"></script>
+  <link rel="stylesheet" href="/fed22d-js-grundkurs-2-todo-JoeldelPilar/assets/index.2bd47698.css">
 </head>
 
 <body>
@@ -46,10 +47,10 @@
           <div id="sort-list-category" class="text-slate-700">
             <label for="category" class="visually-hidden">category</label>
             <select name="category" id="category" class="py-1 px3 bg-inputcolor focus:ring-focusring">
-              <option value="all">all</option> // show all tasks
-              <option value="atoz">name a to z</option> //sort by name a to z
-              <option value="date">latest</option> // sort by recently added
-              <option value="undone">needs attention</option> // sort by deadline
+              <option value="all">all</option>
+              <option value="atoz">name a to z</option>
+              <option value="date">latest</option>
+              <option value="undone">needs attention</option>
             </select>
           </div>
         </header>
@@ -57,7 +58,7 @@
         <div id="ToDo-body" class="text-white">
           <article id="all-tasks"></article>
 
-          <hr>
+          <hr class="mt-2">
           <div id="create-new-task" class="py-5 text-black">
 
             <div class="flex gap-2 justify-end mb-4 text-white text-center">
@@ -72,12 +73,13 @@
               </div>
             </div>
 
-            <form action="" id="task-form" class="flex sm:flex-row flex-wrap justify-between gap-2">
+            <form id="task-form" class="flex sm:flex-row flex-wrap justify-between gap-2">
               <label for="new-task-input" class="visually-hidden">new task input</label>
               <input id="new-task-input"
                 class="flex-grow p-1 py-2 mb-2 bg-inputcolor text-slate-900 focus:ring-focusring" type="text"
                 placeholder="new task input">
               <span id="icon" class="material-symbols-outlined text-white"></span>
+              <label for="date-dropdown" class="visually-hidden">date dropdown window</label>
               <input type="date" id="date-dropdown" class="bg-inputcolor mb-2 flex-wrap min-w-150"
                 onfocus="(this.type='date')">
               <button type="submit" id="add"
